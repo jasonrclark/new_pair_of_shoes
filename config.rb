@@ -1,52 +1,37 @@
-def unfinished(text)
-  slide do
-    background yellow
-    centered_title text, size: VERY_BIG_SIZE, vertical_align: 'center'
+#main_section 'Old Shoes'
+#unfinished 'What is it?'
+#unfinished '_why'
+#unfinished 'Hackety-Hack'
+#unfinished '*disappears*'
+#unfinished 'Proliferation of Shoes'
+#unfinished 'Shoes 4'
+
+#main_section 'Slipping into Shoes'
+
+#example_code 'Shoes.app', "code/shoes_app.rb"
+#example_code 'para',      "code/para.rb"
+#example_code 'button',    "code/button.rb"
+#example_code 'edit',      "code/edit.rb"
+
+#example_code 'Stacks', "code/stacks.rb"
+#example_code 'Flows',  "code/flows.rb"
+
+slide do
+  centered_title "Drawing",
+    size: ENORMOUS_SIZE,
+    weight: 'bold',
+    margin_top: 200
+
+  x,y = 100, 100
+  @a = animate do
+    dx, dy = Random.rand(-100..100), Random.rand(-70..70)
+    line x, y, x + dx, y + dy
+    x, y = x + dx, y + dy
   end
 end
 
-def main_section(text)
-  slide do
-    background cornflowerblue
-    centered_title text, {
-      size: 240,
-      weight: 'bold',
-      margin_top: 200
-    }
-  end
-end
+example_code 'rect', "code/rect.rb"
 
-def example_code(title, path)
-  slide do
-    centered_title title, margin_bottom: "50px"
-
-    element = code(path, true)
-    element.font = "Courier"
-    element.size = 32
-  end
-end
-
-main_section 'Old Shoes'
-unfinished 'What is it?'
-unfinished '_why'
-unfinished 'Hackety-Hack'
-unfinished '*disappears*'
-unfinished 'Proliferation of Shoes'
-unfinished 'Shoes 4'
-
-
-main_section 'Slipping into Shoes'
-
-example_code 'Shoes.app', "code/shoes_app.rb"
-example_code 'para', "code/para.rb"
-
-unfinished 'button'
-unfinished 'edit'
-
-unfinished 'Stacks and Flows'
-
-unfinished 'Drawing'
-unfinished 'rect'
 unfinished 'oval'
 unfinished 'star'
 unfinished 'simple-face'
