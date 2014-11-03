@@ -16,12 +16,48 @@ end
 slide do
   app = Shoes.apps.first
   app.keypress do |key|
-    if key == "c"
+    if key == "\n"
       if @chicken
-        @chicken.hide
+        @chicken.each do |chick|
+          chick.remove
+        end
         @chicken = nil
       else
-        @chicken = rect 200, 200, 100, 100
+        @chicken = []
+        my_left, my_bottom = 800, 768
+
+        fill white
+        @chicken << shape(left: 0, top:0) do
+          move_to my_left, my_bottom
+          line_to my_left + 33, my_bottom - 120
+          line_to my_left + 66, my_bottom
+          line_to my_left, my_bottom
+        end
+
+        fill orange
+        @chicken << shape(left: 0, top: 0) do
+          move_to my_left, my_bottom - 120
+          line_to my_left - 35, my_bottom - 115
+          line_to my_left, my_bottom - 110
+          line_to my_left, my_bottom - 120
+        end
+
+        fill red
+        @chicken << shape(left: 0, top: 0) do
+          move_to my_left, my_bottom - 120
+          line_to my_left + 20, my_bottom - 165
+          line_to my_left + 25, my_bottom - 150
+          line_to my_left + 35, my_bottom - 170
+          line_to my_left + 45, my_bottom - 150
+          line_to my_left + 55, my_bottom - 167
+          line_to my_left + 60, my_bottom - 130
+        end
+
+        @chicken << oval(my_left, my_bottom - 150, 66, 66, fill: white)
+        @chicken << oval(my_left + 20, my_bottom - 130, 10, 10, fill: ivory)
+        @chicken << oval(my_left + 20, my_bottom - 127, 5, 5, fill: blue)
+
+        Thread.new { puts `afplay #{File.expand_path("~/source/get_your_shoes_back_on/sounds/chicken.mp3")}` }
       end
     end
   end
@@ -102,7 +138,6 @@ example_code 'star', "code/star.rb"
 example_code 'simple-face', "../shoes4/samples/simple-face.rb", 24
 
 title_slide 'Widgets, animations and more!'
-
 
 main_section 'Cobbling it Together'
 slide do
