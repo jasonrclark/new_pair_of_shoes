@@ -1,3 +1,8 @@
+startup_options title: "What up yo?",
+                height: 768,
+                width: 1024,
+                fullscreen: false
+
 slide do
   background cornflowerblue
   centered_title 'Get Your Shoes Back On',
@@ -127,7 +132,7 @@ slide do
     x, y = x + dx, y + dy
   end
 
-  on_hide do
+  on_slide_change do
     @scribble.stop
   end
 end

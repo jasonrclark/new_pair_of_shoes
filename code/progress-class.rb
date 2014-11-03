@@ -7,3 +7,5 @@ class Shoes
 
     style_with :common_styles, :dimensions, :fraction
     STYLES = {fraction: 0.0}
+
+    # ...
