@@ -7,27 +7,69 @@ def unfinished(text)
   end
 end
 
-def main_section(text)
+def fullscreen_image(path)
   slide do
-    background cornflowerblue
-    centered_title text,
-      size: ENORMOUS_SIZE,
-      weight: 'bold',
-      margin_top: 200
+    fullscreen_image(path)
   end
 end
 
-def example_code(title, path)
+def demo_slide(file)
+  slide do
+    centered_enormous_text "DEMOS", vertical_align: 'center'
+    demo file do |example_app|
+      example_app.keypress do |key|
+        example_app.quit if key == "w"
+      end
+    end
+  end
+end
+
+def main_section(text, opts={})
+  opts = {
+    size: ENORMOUS_SIZE,
+    weight: 'bold',
+    margin_top: 200
+  }.merge(opts)
+
+  slide do
+    background cornflowerblue
+    centered_title text, opts
+  end
+end
+
+def title_slide(text, &block)
+  slide do
+    centered_title text,
+      size: VERY_BIG_SIZE,
+      weight: 'bold',
+      margin_top: 200
+    self.instance_eval(&block) if block
+  end
+end
+
+def shoes_slide(name, file)
+  slide do
+    centered_title name,
+      size: VERY_BIG_SIZE,
+      weight: 'bold',
+      margin_top: 120
+    image file,
+      left: 450,
+      top: 330
+  end
+end
+
+def example_code(title, path, size = 32, demo = true)
   slide do
     centered_title title, margin_bottom: 50
 
-    element = code(path, true) do |example_app|
+    element = code(path, demo) do |example_app|
       example_app.keypress do |key|
         example_app.quit if key == "w"
       end
     end
 
     element.font = "Courier"
-    element.size = 32
+    element.size = size
   end
 end
