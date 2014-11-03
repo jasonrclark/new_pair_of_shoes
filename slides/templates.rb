@@ -18,7 +18,7 @@ def demo_slide(file)
     centered_enormous_text "DEMOS", vertical_align: 'center'
     demo file do |example_app|
       example_app.keypress do |key|
-        example_app.quit if key == "w"
+        example_app.quit if key == "w" || key == :escape
       end
     end
   end
@@ -65,7 +65,7 @@ def example_code(title, path, size = 32, demo = true)
 
     element = code(path, demo) do |example_app|
       example_app.keypress do |key|
-        example_app.quit if key == "w"
+        example_app.quit if key == "w" || key == :escape
       end
     end
 
