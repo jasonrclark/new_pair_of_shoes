@@ -1,4 +1,4 @@
-startup_options title: "What up yo?",
+startup_options title: "Get Your Shoes (Back) On",
                 height: 768,
                 width: 1024,
                 fullscreen: false
