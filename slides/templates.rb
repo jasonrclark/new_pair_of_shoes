@@ -53,9 +53,7 @@ def shoes_slide(name, file)
       size: VERY_BIG_SIZE,
       weight: 'bold',
       margin_top: 120
-    image file,
-      left: 450,
-      top: 330
+    center_horizontally image file, margin_top: 30
   end
 end
 
