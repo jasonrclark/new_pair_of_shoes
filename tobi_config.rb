@@ -23,7 +23,7 @@ slide do
         @chicken = nil
       else
         @chicken = []
-        my_left, my_bottom = 800, 768
+        my_left, my_bottom = 800, @app.height
 
         fill white
         @chicken << shape(left: 0, top:0) do
