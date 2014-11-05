@@ -6,10 +6,9 @@ slide do
                  size: 120,
     weight: 'bold',
     margin_top: 100
-  para "@jasonrclark",
-       align: 'center',
-    size: 32,
-    margin_top: 30
+  para strong("@jasonrclark"), align: 'center', size: 32, margin_top: 30
+                                   true
+  para "@PragTob", align: 'center', size: 32, margin_top: 30
   center_horizontally image "images/shoes.png", margin_top: 30
 end
 
