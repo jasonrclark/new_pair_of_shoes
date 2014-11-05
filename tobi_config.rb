@@ -56,7 +56,7 @@ slide do
   @chicken << oval(my_left + 20, my_bottom - 130, 10, 10, fill: ivory)
   @chicken << oval(my_left + 20, my_bottom - 127, 5, 5, fill: blue)
 
-  Thread.new { puts `afplay #{File.expand_path("~/source/get_your_shoes_back_on/sounds/chicken.mp3")}` }
+  sound("sounds/chicken.mp3").play
 end
 end
 end
