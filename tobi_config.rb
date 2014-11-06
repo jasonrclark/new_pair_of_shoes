@@ -178,6 +178,8 @@ main_section 'Kick Something Back', margin_top: 100
 fullscreen_image "images/guardfile.png"
 fullscreen_image "images/newcomer-friendly.png"
 
+slides HowDoesThisWork, HowDoesThisWorkDSL
+
 slide do
   background cornflowerblue
   centered_title 'Thanks!',
