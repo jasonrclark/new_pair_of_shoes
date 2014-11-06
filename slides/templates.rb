@@ -2,7 +2,7 @@ def unfinished(text)
   slide do
     background yellow
     centered_title text,
-      size: VERY_BIG_SIZE,
+      size: Wingtips::VERY_BIG_SIZE,
       vertical_align: 'center'
   end
 end
@@ -26,7 +26,7 @@ end
 
 def main_section(text, opts={})
   opts = {
-    size: ENORMOUS_SIZE,
+    size: Wingtips::ENORMOUS_SIZE,
     weight: 'bold',
     margin_top: 200
   }.merge(opts)
@@ -40,7 +40,7 @@ end
 def title_slide(text, &block)
   slide do
     centered_title text,
-      size: VERY_BIG_SIZE,
+      size: Wingtips::VERY_BIG_SIZE,
       weight: 'bold',
       margin_top: 200
     self.instance_eval(&block) if block
@@ -50,7 +50,7 @@ end
 def shoes_slide(name, file)
   slide do
     centered_title name,
-      size: VERY_BIG_SIZE,
+      size: Wingtips::VERY_BIG_SIZE,
       weight: 'bold',
       margin_top: 120
     center_horizontally image file, margin_top: 30
