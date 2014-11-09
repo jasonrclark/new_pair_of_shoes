@@ -62,7 +62,7 @@ slide do
         @chicken << oval(my_left + 20, my_bottom - 130, 10, 10, fill: ivory)
         @chicken << oval(my_left + 20, my_bottom - 127, 5, 5, fill: blue)
 
-        Thread.new { puts `afplay #{File.expand_path("~/source/get_your_shoes_back_on/sounds/chicken.mp3")}` }
+        sound(File.expand_path("sounds/chicken.mp3")).play
       end
     end
   end
@@ -81,7 +81,7 @@ demo_slide "../shoes4/samples/good-clock.rb"
 
 slide do
   fullscreen_image "images/_why.png"
-  para "_why", left: 100, top: 100, size: VERY_BIG_SIZE
+  para "_why", left: 100, top: 100, size: Wingtips::VERY_BIG_SIZE
 end
 
 fullscreen_image "images/hacketyhack.png"
@@ -116,7 +116,7 @@ example_code 'Flows',  "code/flows.rb"
 
 slide do
   centered_title "Drawing",
-    size: ENORMOUS_SIZE,
+    size: Wingtips::ENORMOUS_SIZE,
     weight: 'bold',
     margin_top: 200
 
