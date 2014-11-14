@@ -1,5 +1,5 @@
-def unfinished(text)
-  slide do
+def unfinished(name, text)
+  slide(name) do
     background yellow
     centered_title text,
       size: Wingtips::VERY_BIG_SIZE,
@@ -7,14 +7,8 @@ def unfinished(text)
   end
 end
 
-def fullscreen_image(path)
-  slide do
-    fullscreen_image(path)
-  end
-end
-
-def demo_slide(file)
-  slide do
+def demo_slide(name, file)
+  slide(name) do
     centered_enormous_text "DEMOS", vertical_align: 'center'
     demo file do |example_app|
       example_app.keypress do |key|
@@ -24,21 +18,21 @@ def demo_slide(file)
   end
 end
 
-def main_section(text, opts={})
+def main_section(name, text, opts={})
   opts = {
     size: Wingtips::ENORMOUS_SIZE,
     weight: 'bold',
     margin_top: 200
   }.merge(opts)
 
-  slide do
+  slide(name) do
     background cornflowerblue
     centered_title text, opts
   end
 end
 
-def title_slide(text, &block)
-  slide do
+def title_slide(name, text, &block)
+  slide(name) do
     centered_title text,
       size: Wingtips::VERY_BIG_SIZE,
       weight: 'bold',
@@ -47,9 +41,9 @@ def title_slide(text, &block)
   end
 end
 
-def shoes_slide(name, file)
-  slide do
-    centered_title name,
+def shoes_slide(name, title, file)
+  slide(name) do
+    centered_title title,
       size: Wingtips::VERY_BIG_SIZE,
       weight: 'bold',
       margin_top: 120
@@ -57,8 +51,8 @@ def shoes_slide(name, file)
   end
 end
 
-def example_code(title, path, size = 32, demo = true)
-  slide do
+def example_code(name, title, path, size = 32, demo = true)
+  slide(name) do
     centered_title title, margin_bottom: 50
 
     element = code(path, demo) do |example_app|
