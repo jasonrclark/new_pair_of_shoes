@@ -1,17 +1,18 @@
 GIT
   remote: git://github.com/PragTob/wingtips.git
-  revision: 41b5aa0a916307dc7be8a877f6f7d336c28f292a
+  revision: 03fcb5f1a70e3210d0ddc458d606b841fddca239
   specs:
     wingtips (0.0.1)
 
 GIT
   remote: git://github.com/shoes/shoes4.git
-  revision: e0158b8fd6374af3e3294431121df0befd806f51
+  revision: 6a54a55d435ff1d10f27894ba240d516871e0309
   specs:
     shoes (4.0.0.pre2)
       furoshiki (>= 0.1.2)
       nokogiri
       shoes-dsl (= 4.0.0.pre2)
+      shoes-highlighter (~> 1.0.0)
       shoes-swt (= 4.0.0.pre2)
     shoes-dsl (4.0.0.pre2)
     shoes-swt (4.0.0.pre2)
@@ -31,12 +32,13 @@ GEM
     jruby-jars (1.7.16.1)
     jruby-rack (1.1.16)
     mini_portile (0.6.1)
-    nokogiri (1.6.4)
+    nokogiri (1.6.4.1)
       mini_portile (~> 0.6.0)
-    nokogiri (1.6.4-java)
+    nokogiri (1.6.4.1-java)
     plist (3.1.0)
     rake (10.3.2)
     rubyzip (1.1.6)
+    shoes-highlighter (1.0.0)
     swt (4.4)
     warbler (1.4.4)
       jruby-jars (>= 1.5.6, < 2.0)
