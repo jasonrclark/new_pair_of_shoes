@@ -50,7 +50,7 @@ def shoes_slide(name, title, file)
   end
 end
 
-def example_code(name, title, path, size = 32, demo = true)
+def example_code(name, title, path, size = 32, demo = true, &blk)
   slide(name) do
     centered_title title, margin_bottom: 50
 
@@ -62,5 +62,7 @@ def example_code(name, title, path, size = 32, demo = true)
 
     element.font = "Courier"
     element.size = size
+
+    blk.call if blk
   end
 end
