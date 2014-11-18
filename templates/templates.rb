@@ -8,8 +8,7 @@ def unfinished(name, text)
 end
 
 def demo_slide(name, file)
-  slide(name) do
-    centered_enormous_text "DEMOS", vertical_align: 'center'
+  title_slide(name, "DEMOS") do
     demo file do |example_app|
       example_app.keypress do |key|
         example_app.quit if key == "w" || key == :escape
@@ -34,9 +33,9 @@ end
 def title_slide(name, text, &block)
   slide(name) do
     centered_title text,
-      size: Wingtips::VERY_BIG_SIZE,
+      size: Wingtips::ENORMOUS_SIZE,
       weight: 'bold',
-      margin_top: 200
+      vertical_align: 'center'
     self.instance_eval(&block) if block
   end
 end

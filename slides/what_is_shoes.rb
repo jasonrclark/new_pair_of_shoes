@@ -64,9 +64,7 @@ slide "WhatIsShoes" do
   centered_huge_text "?", weight: 'bold', margin_top: 170
 end
 
-slide "DEMOS" do
-  centered_enormous_text "DEMOS", vertical_align: 'center'
-end
+title_slide "DEMOS", "DEMOS"
 
 demo_slide "Minesweeper", "../shoes4/samples/expert-minesweeper-adjusted.rb"
 demo_slide "Snake", "../shoes4/samples/expert-snake.rb"
