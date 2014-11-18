@@ -1,6 +1,6 @@
 slide "MainTitle" do
   background cornflowerblue
-  centered_title 'Get Your Shoes Back On',
+  centered_title 'Get Your Shoes (Back) On',
     size: 120,
     weight: 'bold',
     margin_top: 100
