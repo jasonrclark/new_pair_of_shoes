@@ -92,9 +92,4 @@ shoes_slide "OrangeShoes", "Orange Shoes\nHTML/Javascript", "images/shoes.orange
 shoes_slide "PurpleShoes", "Purple Shoes\nSWT", "images/shoes.purple.png"
 shoes_slide "BlackShoes",  "Black Shoes\nHTML/CoffeeScript", "images/shoes.black.png"
 
-slide "Shoes4" do
-  centered_enormous_text 'Shoes 4', margin_top: 200
-
-  # Sneaky, know we want this bumped up after this point
-  Shoes::Para::STYLES[:size] = 48
-end
+title_slide "Shoes4", "Shoes 4"

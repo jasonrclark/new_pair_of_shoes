@@ -1,7 +1,10 @@
 main_section "SlippingIntoShoes", 'Slipping into Shoes'
 
 example_code "ShoesApp", 'Shoes.app', "code/shoes_app.rb"
-example_code "Para",     'para',      "code/para.rb"
+example_code "Para",     'para',      "code/para.rb" do
+  # Sneaky, know we want this bumped up after this point
+  Shoes::Para::STYLES[:size] = 48
+end
 example_code "Button",   'button',    "code/button.rb"
 example_code "Edit",     'edit',      "code/edit.rb"
 
