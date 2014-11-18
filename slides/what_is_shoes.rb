@@ -22,38 +22,38 @@ slide "WhatIsShoes" do
         @chicken = nil
       else
         @chicken = []
-        my_left, my_bottom = 800, 768
+        my_left, my_top = 200, 0
 
         fill white
         @chicken << shape(left: 0, top:0) do
-          move_to my_left, my_bottom
-          line_to my_left + 33, my_bottom - 120
-          line_to my_left + 66, my_bottom
-          line_to my_left, my_bottom
+          move_to my_left, my_top
+          line_to my_left + 33, my_top + 120
+          line_to my_left + 66, my_top
+          line_to my_left, my_top
         end
 
         fill orange
         @chicken << shape(left: 0, top: 0) do
-          move_to my_left, my_bottom - 120
-          line_to my_left - 35, my_bottom - 115
-          line_to my_left, my_bottom - 110
-          line_to my_left, my_bottom - 120
+          move_to my_left, my_top + 120
+          line_to my_left - 35, my_top + 115
+          line_to my_left, my_top + 110
+          line_to my_left, my_top + 120
         end
 
         fill red
         @chicken << shape(left: 0, top: 0) do
-          move_to my_left, my_bottom - 120
-          line_to my_left + 20, my_bottom - 165
-          line_to my_left + 25, my_bottom - 150
-          line_to my_left + 35, my_bottom - 170
-          line_to my_left + 45, my_bottom - 150
-          line_to my_left + 55, my_bottom - 167
-          line_to my_left + 60, my_bottom - 130
+          move_to my_left, my_top + 120
+          line_to my_left + 20, my_top + 165
+          line_to my_left + 25, my_top + 150
+          line_to my_left + 35, my_top + 170
+          line_to my_left + 45, my_top + 150
+          line_to my_left + 55, my_top + 167
+          line_to my_left + 60, my_top + 130
         end
 
-        @chicken << oval(my_left, my_bottom - 150, 66, 66, fill: white)
-        @chicken << oval(my_left + 20, my_bottom - 130, 10, 10, fill: ivory)
-        @chicken << oval(my_left + 20, my_bottom - 127, 5, 5, fill: blue)
+        @chicken << oval(my_left, my_top + 85, 66, 66, fill: white)
+        @chicken << oval(my_left + 20, my_top + 120, 10, 10, fill: ivory)
+        @chicken << oval(my_left + 20, my_top + 122, 5, 5, fill: blue)
 
         sound(File.expand_path("sounds/chicken.mp3")).play
       end
