@@ -1,20 +1,22 @@
-main_section "KickSomethingBack", 'Kick Something Back', margin_top: 100
-
-slide "Guardfile" do
-  fullscreen_image "images/guardfile.png"
+slide "Gaga" do
+  center_horizontally image("gaga.png", height: app.height)
 end
 
-slide "NewcomerFriendly" do
-  fullscreen_image "images/newcomer-friendly.png"
-end
-
-slide "Thanks" do
+slide "RubyConfThanks" do
   background cornflowerblue
   centered_title 'Thanks!',
     size: 120,
     weight: 'bold',
     margin_top: 100
   para "@jasonrclark",
+    align: 'center',
+    size: 32,
+    margin_top: 30
+  para "BOF Session Tonight, 8pm Room 23",
+    align: 'center',
+    size: 48,
+    margin_top: 30
+  para "http://github.com/shoes/shoes4",
     align: 'center',
     size: 32,
     margin_top: 30

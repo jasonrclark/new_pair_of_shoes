@@ -1,6 +1,6 @@
 slide "MainTitle" do
   background cornflowerblue
-  centered_title 'Get Your Shoes Back On',
+  centered_title 'Get Your Shoes (Back) On',
     size: 120,
     weight: 'bold',
     margin_top: 100
@@ -22,38 +22,38 @@ slide "WhatIsShoes" do
         @chicken = nil
       else
         @chicken = []
-        my_left, my_bottom = 800, 768
+        my_left, my_top = 200, 0
 
         fill white
         @chicken << shape(left: 0, top:0) do
-          move_to my_left, my_bottom
-          line_to my_left + 33, my_bottom - 120
-          line_to my_left + 66, my_bottom
-          line_to my_left, my_bottom
+          move_to my_left, my_top
+          line_to my_left + 33, my_top + 120
+          line_to my_left + 66, my_top
+          line_to my_left, my_top
         end
 
         fill orange
         @chicken << shape(left: 0, top: 0) do
-          move_to my_left, my_bottom - 120
-          line_to my_left - 35, my_bottom - 115
-          line_to my_left, my_bottom - 110
-          line_to my_left, my_bottom - 120
+          move_to my_left, my_top + 120
+          line_to my_left - 35, my_top + 115
+          line_to my_left, my_top + 110
+          line_to my_left, my_top + 120
         end
 
         fill red
         @chicken << shape(left: 0, top: 0) do
-          move_to my_left, my_bottom - 120
-          line_to my_left + 20, my_bottom - 165
-          line_to my_left + 25, my_bottom - 150
-          line_to my_left + 35, my_bottom - 170
-          line_to my_left + 45, my_bottom - 150
-          line_to my_left + 55, my_bottom - 167
-          line_to my_left + 60, my_bottom - 130
+          move_to my_left, my_top + 120
+          line_to my_left + 20, my_top + 165
+          line_to my_left + 25, my_top + 150
+          line_to my_left + 35, my_top + 170
+          line_to my_left + 45, my_top + 150
+          line_to my_left + 55, my_top + 167
+          line_to my_left + 60, my_top + 130
         end
 
-        @chicken << oval(my_left, my_bottom - 150, 66, 66, fill: white)
-        @chicken << oval(my_left + 20, my_bottom - 130, 10, 10, fill: ivory)
-        @chicken << oval(my_left + 20, my_bottom - 127, 5, 5, fill: blue)
+        @chicken << oval(my_left, my_top + 85, 66, 66, fill: white)
+        @chicken << oval(my_left + 20, my_top + 120, 10, 10, fill: ivory)
+        @chicken << oval(my_left + 20, my_top + 122, 5, 5, fill: blue)
 
         sound(File.expand_path("sounds/chicken.mp3")).play
       end
@@ -64,9 +64,7 @@ slide "WhatIsShoes" do
   centered_huge_text "?", weight: 'bold', margin_top: 170
 end
 
-slide "DEMOS" do
-  centered_enormous_text "DEMOS", vertical_align: 'center'
-end
+title_slide "DEMOS", "DEMOS"
 
 demo_slide "Minesweeper", "../shoes4/samples/expert-minesweeper-adjusted.rb"
 demo_slide "Snake", "../shoes4/samples/expert-snake.rb"
@@ -92,9 +90,4 @@ shoes_slide "OrangeShoes", "Orange Shoes\nHTML/Javascript", "images/shoes.orange
 shoes_slide "PurpleShoes", "Purple Shoes\nSWT", "images/shoes.purple.png"
 shoes_slide "BlackShoes",  "Black Shoes\nHTML/CoffeeScript", "images/shoes.black.png"
 
-slide "Shoes4" do
-  centered_enormous_text 'Shoes 4', margin_top: 200
-
-  # Sneaky, know we want this bumped up after this point
-  Shoes::Para::STYLES[:size] = 48
-end
+title_slide "Shoes4", "Shoes 4"
