@@ -66,3 +66,9 @@ def example_code(name, title, path, size = 32, demo = true, &blk)
     blk.call if blk
   end
 end
+
+def fullscreen_image_slide(name, path)
+  slide(name) do
+    fullscreen_image path
+  end
+end
