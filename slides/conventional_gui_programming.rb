@@ -58,11 +58,12 @@ title_slide 'JustHelloWorld', 'I just wanted to say "Hello World"'
 
 slide 'HelloShoes' do
   empty_line
-  hello_shoes = code <<-Code
+  hello_shoes = <<-Code
 Shoes.app title: 'Hello Shoes' do
   para 'Hello World'
 end
   Code
+  code hello_shoes, true
 end
 
 slide 'IHeartShoes' do
