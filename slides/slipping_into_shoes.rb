@@ -5,6 +5,7 @@ example_code "Para",     'para',      "code/para.rb" do
   # Sneaky, know we want this bumped up after this point
   Shoes::Para::STYLES[:size] = 48
 end
+
 example_code "Button",   'button',    "code/button.rb"
 example_code "Edit",     'edit',      "code/edit.rb"
 
@@ -38,6 +39,8 @@ example_code "Rect", 'rect', "code/rect.rb"
 example_code "Oval", 'oval', "code/oval.rb"
 example_code "Star", 'star', "code/star.rb"
 example_code "SimpleFace", 'simple-face', "../shoes4/samples/simple-face.rb", 24
+example_code 'BasicApp', 'A basic app', 'basic_app.rb'
+
 
 title_slide "WidgetsAndMore", 'Widgets, animations and more!'
 

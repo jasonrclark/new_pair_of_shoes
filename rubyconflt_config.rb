@@ -43,6 +43,7 @@ slides SlippingIntoShoes,
        Rect,
        Oval,
        SimpleFace,
+       BasicApp,
        WidgetsAndMore
 
 slides HowDoesThisWork,
