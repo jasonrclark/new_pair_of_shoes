@@ -67,6 +67,6 @@ end
 end
 
 slide 'IHeartShoes' do
-  5.times do empty_line end
+  3.times do empty_line end
   para 'I ', fg('♥', red), ' Shoes', size: Wingtips::ENORMOUS_SIZE, align: 'center'
 end
