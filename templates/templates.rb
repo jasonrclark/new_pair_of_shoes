@@ -33,7 +33,7 @@ end
 def title_slide(name, text, &block)
   slide(name) do
     centered_title text,
-      size: Wingtips::ENORMOUS_SIZE,
+      size: 60,
       weight: 'bold',
       vertical_align: 'center'
     self.instance_eval(&block) if block
@@ -62,6 +62,23 @@ def example_code(name, title, path, size = 32, demo = true, &blk)
 
     element.font = "Courier"
     element.size = size
+
+    blk.call if blk
+  end
+end
+
+def tobi_example_code(name, title, path, demo = false, &blk)
+  slide(name) do
+    headline title
+
+    element = code(path, demo) do |example_app|
+      example_app.keypress do |key|
+        example_app.quit if key == "w" || key == :escape
+      end
+    end
+
+    element.font = "Courier"
+    element.size = 24
 
     blk.call if blk
   end

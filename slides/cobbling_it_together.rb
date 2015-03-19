@@ -1,4 +1,5 @@
 main_section "CobblingItTogether", 'Cobbling it Together'
+main_section "AWalkThroughShoes", 'A walk through Shoes'
 slide "MoreShoes4" do
   centered_enormous_text 'Shoes 4', margin_top: 200
 end
@@ -33,4 +34,16 @@ example_code "ProgressSpec",    "progress_spec.rb", "code/progress-dsl-spec.rb",
 example_code "ProgressSwtSpec", "swt/progress_spec.rb", "code/progress-backend-spec.rb", 28, false
 
 title_slide "StartupAndCosts", "Startup and other costs"
+
+
+tobi_example_code 'ButtonDsl', 'dsl.rb', 'button-dsl.rb'
+tobi_example_code 'ButtonClass', "Button Class", 'button-class.rb'
+tobi_example_code 'UIElement', "UIElement", 'ui-element.rb'
+tobi_example_code 'CommonInitialization', "Common::Initialization", 'common-initialization.rb'
+tobi_example_code 'CommonInitializationHandleBlock', "Common::Initialization", 'common-initialization-handle-block.rb'
+tobi_example_code 'CommonClickable', "Common::Clickable", 'common-clickable.rb'
+tobi_example_code 'SwtButton', "Swt::Button", 'swt-button.rb'
+tobi_example_code 'SwtSwtButton', "Swt::SwtButton", 'swt-swt-button.rb'
+tobi_example_code 'SwtSwtButtonClick', "Swt::SwtButton", 'swt-swt-button-click.rb'
+
 

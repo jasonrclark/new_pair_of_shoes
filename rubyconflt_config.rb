@@ -46,6 +46,20 @@ slides SlippingIntoShoes,
        BasicApp,
        WidgetsAndMore
 
+slides AWalkThroughShoes,
+       DslDiagram,
+       Button,
+       ButtonDsl,
+       ButtonClass,
+       UIElement,
+       CommonInitialization,
+       CommonInitializationHandleBlock,
+       CommonClickable,
+       SwtButton,
+       SwtSwtButton,
+       SwtSwtButtonClick
+
+
 slides HowDoesThisWork,
        HowDoesThisWorkDSL,
        TobiThanks
