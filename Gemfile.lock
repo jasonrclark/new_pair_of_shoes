@@ -1,8 +1,10 @@
 GIT
   remote: git://github.com/PragTob/wingtips.git
-  revision: 358c96cbb7b320ba35948d2252b338a3cf0f0910
+  revision: e6fd2762258933fb55b3dab9a402c4fc023129e1
   specs:
-    wingtips (0.0.1)
+    wingtips (0.1.0)
+      shoes (~> 4.0.0.pre3)
+      shoes-highlighter (~> 1.0.0)
 
 GIT
   remote: git://github.com/shoes/shoes4.git
