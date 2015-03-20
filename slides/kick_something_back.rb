@@ -26,15 +26,19 @@ slide "Thanks" do
 end
 
 slide "TobiThanks" do
-  background cornflowerblue
-  centered_title 'Thanks!', size: 120,
-                            weight: 'bold',
-                            margin_top: 100
+  background limegreen
+  centered_title 'Thanks & Shoes on!', size: 120,
+                                       weight: 'bold',
+                                       margin_top: 100
   para "@PragTob",
        align: 'center',
        size: 32,
        margin_top: 30
   para "http://github.com/shoes/shoes4",
+       align: 'center',
+       size: 32,
+       margin_top: 30
+  para "http://github.com/PragTob/wingtips",
        align: 'center',
        size: 32,
        margin_top: 30

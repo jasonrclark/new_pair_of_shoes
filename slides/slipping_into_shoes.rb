@@ -1,4 +1,5 @@
 main_section "SlippingIntoShoes", 'Slipping into Shoes'
+tobi_main_section "TobiSlippingIntoShoes", 'Slipping into Shoes'
 
 example_code "ShoesApp", 'Shoes.app', "code/shoes_app.rb"
 example_code "Para",     'para',      "code/para.rb" do

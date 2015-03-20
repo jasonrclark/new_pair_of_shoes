@@ -4,6 +4,10 @@ path = File.expand_path(File.join(File.dirname(__FILE__),
                                   '../images/google_gui_hello_world/'))
 directory = Dir.glob(path + '/*.png')
 
+title_slide 'YearsBack', '7 Years Back'
+fullscreen_image_slide 'TobiBackThen', 'tobi_pre_abi.jpg'
+title_slide 'IWantToLearnGui', 'I want to learn GUI programming!'
+
 directory.sort.each_with_index do |image_path, i|
   class_name = "GuiHelloWorld#{i}"
   fullscreen_image_slide class_name, image_path
@@ -14,15 +18,12 @@ slide 'JavaCode1' do
   code <<-CODE
 public class HelloWorldSwing {
     private static void createAndShowGUI() {
-        //Create and set up the window.
         JFrame frame = new JFrame("HelloWorldSwing");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        //Add the ubiquitous "Hello World" label.
         JLabel label = new JLabel("Hello World");
         frame.getContentPane().add(label);
 
-        //Display the window.
         frame.pack();
         frame.setVisible(true);
     }
@@ -33,8 +34,6 @@ slide 'JavaCode2' do
   empty_line
   code <<-CODE
   public static void main(String[] args) {
-      //Schedule a job for the event-dispatching thread:
-      //creating and showing the GUI.
       javax.swing.SwingUtilities.invokeLater(new Runnable() {
           public void run() {
               createAndShowGUI();
@@ -56,15 +55,7 @@ title_slide 'NotWhatIWanted', 'Not what I wanted'
 title_slide 'CouldItBeSimpler', "Why can't it be simpler?"
 title_slide 'JustHelloWorld', 'I just wanted to say "Hello World"'
 
-slide 'HelloShoes' do
-  empty_line
-  hello_shoes = <<-Code
-Shoes.app title: 'Hello Shoes' do
-  para 'Hello World'
-end
-  Code
-  code hello_shoes, true
-end
+tobi_example_code 'HelloShoes', 'hello_shoes.rb'
 
 slide 'IHeartShoes' do
   3.times do empty_line end

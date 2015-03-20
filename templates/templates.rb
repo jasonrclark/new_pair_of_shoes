@@ -30,6 +30,18 @@ def main_section(name, text, opts={})
   end
 end
 
+def tobi_main_section(name, text, opts={})
+  opts = {
+      size: 80,
+      weight: 'bold',
+      margin_top: 150
+  }.merge(opts)
+
+  slide(name) do
+    background limegreen
+    centered_title text, opts
+  end
+end
 def title_slide(name, text, &block)
   slide(name) do
     centered_title text,

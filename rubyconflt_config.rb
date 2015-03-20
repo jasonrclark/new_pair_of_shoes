@@ -1,14 +1,8 @@
 startup_options title: "Get Your Shoes (Back) On"
 
-slide do
-  centered_title 'Get Your Shoes Back on',
-                 weight: :bold,
-                 margin_top: 100,
-                 size: 60
-  center_horizontally image("shoes.png", margin_top: 30)
-  centered_subtitle '@PragTob', weight: :bold, margin_top: 160
-  center_horizontally scale_image_by(image("bitcrowd.png", margin_top: 30), 0.5)
-end
+slides YearsBack,
+       TobiBackThen,
+       IWantToLearnGui
 
 slides GuiHelloWorld0,
   GuiHelloWorld1,
@@ -24,7 +18,15 @@ slides GuiHelloWorld0,
   HelloShoes,
   IHeartShoes
 
-
+slide do
+  centered_title 'Get Your Shoes Back on',
+                 weight: :bold,
+                 margin_top: 100,
+                 size: 60
+  center_horizontally image("shoes.png", margin_top: 30)
+  centered_subtitle '@PragTob', weight: :bold, margin_top: 160
+  center_horizontally scale_image_by(image("bitcrowd.png", margin_top: 30), 0.5)
+end
 
 slides ShoesQuestion,
        RubyGuiDsl,
@@ -36,7 +38,7 @@ slides ShoesQuestion,
        Snake,
        Clock
 
-slides SlippingIntoShoes,
+slides TobiSlippingIntoShoes,
        ShoesApp,
        Para,
        Button,
@@ -47,7 +49,7 @@ slides SlippingIntoShoes,
        Rect,
        Oval,
        SimpleFace,
-       BasicApp,
+       # BasicApp,
        WidgetsAndMore
 
 slides AWalkThroughShoes,
