@@ -49,7 +49,7 @@ slides TobiSlippingIntoShoes,
        Rect,
        Oval,
        SimpleFace,
-       # BasicApp,
+       BasicApp,
        WidgetsAndMore
 
 slides AWalkThroughShoes,
