@@ -32,23 +32,29 @@ end
 slides ShoesQuestion,
        RubyGuiDsl,
        CrossPlatform,
-       Why,
-       HacketyHack,
        DEMOS,
        Minesweeper,
        Snake,
-       Clock
+       Clock,
+       Why,
+       HacketyHack,
+       WhysGone,
+       GreenShoes,
+       BlueShoes,
+       PurpleShoes,
+       OrangeShoes,
+       BlackShoes,
+       BrownShoes,
+       Shoes4
 
 slides TobiSlippingIntoShoes,
        ShoesApp,
        Para,
-       Button,
        Edit,
        Stacks,
        Flows,
        Drawing,
        Rect,
-       Oval,
        TobiSimpleFace,
        BasicApp,
        WidgetsAndMore
@@ -64,7 +70,8 @@ slides AWalkThroughShoes,
        CommonClickable,
        SwtButton,
        SwtSwtButton,
-       SwtSwtButtonClick
+       SwtSwtButtonClick,
+       Phew
 
 
 slides HowDoesThisWork,
