@@ -73,8 +73,16 @@ slides AWalkThroughShoes,
        SwtSwtButtonClick,
        Phew
 
+slides WhyCare,
+       Web,
+       Console,
+       Learn,
+       Tool,
+       Teaching,
+       Fun
 
 slides HowDoesThisWork,
        HowDoesThisWorkDSL,
-       TobiThanks
+       TobiThanks,
+       PhotoCredit
 

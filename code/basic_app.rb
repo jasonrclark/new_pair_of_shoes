@@ -1,6 +1,7 @@
 Shoes. app title: 'Hello Shoes' do
-  background gradient limegreen..blue
+  background gradient(
+             limegreen..blue)
   para 'A very basic app'
-  button 'Click' do alert 'Hi!' end
+  button '?' do alert 'Hi!' end
   image 'http://shoesrb.com/img/shoes-icon.png'
 end
