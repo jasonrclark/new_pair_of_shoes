@@ -1,4 +1,5 @@
 startup_options title: "Get Your Shoes (Back) On"
+slide_options background_color: Shoes::COLORS[:white]
 
 slides YearsBack,
        TobiBackThen,
