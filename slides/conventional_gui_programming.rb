@@ -54,10 +54,10 @@ end
 title_slide 'NotWhatIWanted', 'Not what I wanted'
 title_slide 'CouldItBeSimpler', "Why can't it be simpler?"
 title_slide 'JustHelloWorld', 'I just wanted to say "Hello World"'
+title_slide 'ManyYearsPass', 'Many Years pass...'
 
-tobi_example_code 'HelloShoes', 'hello_shoes.rb'
+tobi_example_code 'HelloShoes', 'Hello Shoes', 'hello_shoes.rb', true
 
 slide 'IHeartShoes' do
-  3.times do empty_line end
-  para 'I ', fg('♥', red), ' Shoes', size: Wingtips::ENORMOUS_SIZE, align: 'center'
+  para 'I ', fg('♥', red), ' Shoes', size: Wingtips::ENORMOUS_SIZE, align: 'center', margin_top: (app.height / 2) - 120
 end

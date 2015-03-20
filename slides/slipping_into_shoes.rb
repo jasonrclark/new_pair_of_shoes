@@ -42,6 +42,8 @@ example_code "Star", 'star', "code/star.rb"
 example_code "SimpleFace", 'simple-face', "../shoes4/samples/simple-face.rb", 24
 example_code 'BasicApp', 'A basic app', 'basic_app.rb'
 
+tobi_example_code "TobiSimpleFace", 'simple-face', 'simple-face.rb', true
+
 
 title_slide "WidgetsAndMore", 'Widgets, animations and more!'
 

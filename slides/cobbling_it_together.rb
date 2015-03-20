@@ -1,5 +1,5 @@
 main_section "CobblingItTogether", 'Cobbling it Together'
-main_section "AWalkThroughShoes", 'A walk through Shoes'
+tobi_main_section "AWalkThroughShoes", 'A walk through Shoes'
 slide "MoreShoes4" do
   centered_enormous_text 'Shoes 4', margin_top: 200
 end

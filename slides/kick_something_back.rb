@@ -27,7 +27,7 @@ end
 
 slide "TobiThanks" do
   background limegreen
-  centered_title 'Thanks & Shoes on!', size: 120,
+  centered_title 'Thanks & Shoes on!', size: 80,
                                        weight: 'bold',
                                        margin_top: 100
   para "@PragTob",

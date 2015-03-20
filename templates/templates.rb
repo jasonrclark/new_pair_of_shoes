@@ -34,7 +34,7 @@ def tobi_main_section(name, text, opts={})
   opts = {
       size: 80,
       weight: 'bold',
-      margin_top: 150
+      margin_top: 300
   }.merge(opts)
 
   slide(name) do
