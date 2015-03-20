@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: git://github.com/shoes/shoes4.git
-  revision: 6ffe27f6da0e56fcaa5950b5d184a6f3319ad103
+  revision: 0798a2d3452ee0fc983caf0b72fb20bc7237f3ed
   specs:
     shoes (4.0.0.pre3)
       shoes-core (= 4.0.0.pre3)
