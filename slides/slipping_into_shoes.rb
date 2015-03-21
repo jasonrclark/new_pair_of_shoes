@@ -1,14 +1,14 @@
 main_section "SlippingIntoShoes", 'Slipping into Shoes'
 tobi_main_section "TobiSlippingIntoShoes", 'Slipping into Shoes'
 
-example_code "ShoesApp", 'Shoes.app', "code/shoes_app.rb"
-example_code "Para",     'para',      "code/para.rb"
+tobi_example_code "ShoesApp", 'Shoes.app', "code/shoes_app.rb", true
+tobi_example_code "Para",     'para',      "code/para.rb", true
 
-example_code "Button",   'button',    "code/button.rb"
-example_code "Edit",     'edit',      "code/edit.rb"
+tobi_example_code "Button",   'button',    "code/button.rb", true
+tobi_example_code "Edit",     'edit',      "code/edit.rb", true
 
-example_code "Stacks", 'Stacks', "code/stacks.rb"
-example_code "Flows",  'Flows',  "code/flows.rb"
+tobi_example_code "Stacks", 'Stacks', "code/stacks.rb", true
+tobi_example_code "Flows",  'Flows',  "code/flows.rb", true
 
 slide "Drawing" do
   centered_title "Drawing",
@@ -33,11 +33,11 @@ slide "Drawing" do
   end
 end
 
-example_code "Rect", 'rect', "code/rect.rb"
-example_code "Oval", 'oval', "code/oval.rb"
-example_code "Star", 'star', "code/star.rb"
-example_code "SimpleFace", 'simple-face', "../shoes4/samples/simple-face.rb", 24
-example_code 'BasicApp', 'A basic app', 'basic_app.rb'
+tobi_example_code "Rect", 'rect', "code/rect.rb", true
+tobi_example_code "Oval", 'oval', "code/oval.rb"
+tobi_example_code "Star", 'star', "code/star.rb"
+tobi_example_code "SimpleFace", 'simple-face', "../shoes4/samples/simple-face.rb",true
+tobi_example_code 'BasicApp', 'A basic app', 'basic_app.rb', true
 
 tobi_example_code "TobiSimpleFace", 'simple-face', 'simple-face.rb', true
 

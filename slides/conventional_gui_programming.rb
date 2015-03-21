@@ -15,7 +15,7 @@ end
 
 slide 'JavaCode1' do
   empty_line
-  code <<-CODE
+  c = code <<-CODE
 public class HelloWorldSwing {
     private static void createAndShowGUI() {
         JFrame frame = new JFrame("HelloWorldSwing");
@@ -28,11 +28,13 @@ public class HelloWorldSwing {
         frame.setVisible(true);
     }
   CODE
+  c.font = 'Courier'
+  c.size = 24
 end
 
 slide 'JavaCode2' do
   empty_line
-  code <<-CODE
+  c = code <<-CODE
   public static void main(String[] args) {
       javax.swing.SwingUtilities.invokeLater(new Runnable() {
           public void run() {
@@ -42,6 +44,8 @@ slide 'JavaCode2' do
   }
 }
   CODE
+  c.font = 'Courier'
+  c.size = 24
 end
 
 # TODO fix whiteness of image or adjust background color

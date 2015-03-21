@@ -79,9 +79,9 @@ def example_code(name, title, path, size = 32, demo = true, &blk)
   end
 end
 
-def tobi_example_code(name, title, path, demo = false, &blk)
+def tobi_example_code(name, my_title, path, demo = false, &blk)
   slide(name) do
-    headline title
+    title '  ' + my_title, size: 60, margin_bottom: 10
 
     element = code(path, demo) do |example_app|
       example_app.keypress do |key|

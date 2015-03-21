@@ -15,6 +15,14 @@ slide_options background_color: Shoes::COLORS[:white],
                   class:     { stroke: Shoes::COLORS[:darkviolet], weight: "bold" },
                   matching:  { stroke: "#ff0", weight: "bold" },
               }
+slide do
+  font 'fonts/ArchitectsDaughter.ttf'
+  font = 'ArchitectsDaughter'
+  style(Shoes::Para, font: font)
+  style(Shoes::Title, font: font)
+  style(Shoes::Banner, font: font)
+  style(Shoes::Subtitle, font: font)
+end
 
 slides YearsBack,
        TobiBackThen,
@@ -97,8 +105,7 @@ slides WhyCare,
        Teaching,
        Fun
 
-slides HowDoesThisWork,
-       HowDoesThisWorkDSL,
+slides HowDoesThisWorkDSL,
        TobiThanks,
        PhotoCredit
 
