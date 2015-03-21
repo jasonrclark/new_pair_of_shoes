@@ -29,22 +29,22 @@ slide "TobiThanks" do
   background limegreen
   centered_title 'Shoes on!', size: 80,
                                        weight: 'bold',
-                                       margin_top: 100
+                                       margin_top: 70
   para "@PragTob",
        align: 'center',
        size: 32,
-       margin_top: 30
+       margin_top: 15
   para "http://github.com/shoes/shoes4",
        align: 'center',
        size: 32,
-       margin_top: 30
+       margin_top: 15
   para "http://github.com/PragTob/wingtips",
        align: 'center',
        size: 32,
-       margin_top: 30
+       margin_top: 15
   para "http://github.com/jasonrclark/get_your_shoes_back_on",
        align: 'center',
        size: 32,
-       margin_top: 30
+       margin_top: 15
   center_horizontally image "images/shoes.png", margin_top: 30
 end
