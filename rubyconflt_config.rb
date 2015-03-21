@@ -49,7 +49,7 @@ slide do
                  margin_top: 100,
                  size: 60
   center_horizontally scale_image_by(image("shoes.png", margin_top: 30), 1.3)
-  centered_subtitle '@PragTob', weight: :bold, margin_top: 220
+  centered_subtitle 'Tobias Pfeiffer - @PragTob', weight: :bold, margin_top: 220
   center_horizontally scale_image_by(image("bitcrowd.png", margin_top: 30), 0.3)
 end
 
