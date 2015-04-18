@@ -1,4 +1,4 @@
-Shoes. app title: 'Hello Shoes' do
+Shoes.app title: 'Hello Shoes' do
   background gradient(
              limegreen..blue)
   para 'A very basic app'
