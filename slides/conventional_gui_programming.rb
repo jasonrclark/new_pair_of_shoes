@@ -60,7 +60,7 @@ title_slide 'CouldItBeSimpler', "Why can't it be simpler?"
 title_slide 'JustHelloWorld', 'I just wanted to say "Hello World"'
 title_slide 'ManyYearsPass', 'Many Years pass...'
 
-tobi_example_code 'HelloShoes', 'Hello Shoes', 'hello_shoes.rb', true
+example_code 'HelloShoes', 'Hello Shoes', 'hello_shoes.rb', demo: true
 
 slide 'IHeartShoes' do
   para 'I ', fg('♥', red), ' Shoes', size: Wingtips::ENORMOUS_SIZE, align: 'center', margin_top: (app.height / 2) - 120

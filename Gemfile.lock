@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/PragTob/wingtips.git
-  revision: 0da93e618dd6490ed10a6b22e482cec0d7108177
+  revision: 0ddbbc7b6c4122f270913d29c27b6c90feadbe49
   branch: code-highlighting
   specs:
     wingtips (0.2.0)

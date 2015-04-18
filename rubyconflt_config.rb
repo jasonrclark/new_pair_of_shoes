@@ -17,11 +17,22 @@ wingtips_options  app: {title: "Get Your Shoes (Back) On"},
                   },
                   templates: {
                     main_section: {
-                      size: 80,
+                      size:       80,
                       margin_top: 300
                     },
                     title_slide: {
                       size: 60
+                    },
+                    example_code: {
+                      code:  {
+                        size: 24
+                      },
+                      title: {
+                        size:          60,
+                        margin_left:   80,
+                        margin_bottom: 10,
+                        align:         nil
+                      }
                     }
                   }
 

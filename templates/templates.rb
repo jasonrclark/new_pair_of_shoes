@@ -17,25 +17,33 @@ def demo_slide(name, file)
   end
 end
 
+DEFAULT_MAIN_SECTION_OPTIONS = {
+  size:       Wingtips::ENORMOUS_SIZE,
+  weight:     'bold',
+  margin_top: 200
+}.freeze
+
 def main_section(name, text, opts={})
-  opts = {
-    size: Wingtips::ENORMOUS_SIZE,
-    weight: 'bold',
-    margin_top: 200
-  }.merge(configuration.template_options[:main_section]).merge(opts)
+  options = _merge_template_options DEFAULT_MAIN_SECTION_OPTIONS,
+                                    :main_section,
+                                    opts
 
   slide(name) do
     background cornflowerblue
-    centered_title text, opts
+    centered_title text, options
   end
 end
 
+DEFAULT_TITLE_SLIDE_OPTIONS = {
+  size:           Wingtips::ENORMOUS_SIZE,
+  vertical_align: 'center',
+  weight:         'bold'
+}.freeze
+
 def title_slide(name, text, opts={}, &block)
-  options = {
-    size: Wingtips::ENORMOUS_SIZE,
-    vertical_align: 'center',
-    weight: 'bold'
-  }.merge(configuration.template_options[:title_slide]).merge opts
+  options = _merge_template_options DEFAULT_TITLE_SLIDE_OPTIONS,
+                                    :title_slide,
+                                    opts
 
   slide(name) do
     centered_title text, options
@@ -53,35 +61,30 @@ def shoes_slide(name, title, file)
   end
 end
 
-def example_code(name, title, path, size = 32, demo = true, &blk)
-  slide(name) do
-    centered_title title, margin_bottom: 50
+DEFAULT_EXAMPLE_CODE_OPTIONS = {
+  code: {
+    font: 'Courier',
+    size: 32
+  },
+  title: {
+    margin_bottom: 50
+  },
+  demo: false
+}.freeze
 
-    element = code(path, demo) do |example_app|
+def example_code(name, title, path, opts = {}, &blk)
+  options = _merge_template_options DEFAULT_EXAMPLE_CODE_OPTIONS,
+                                   :example_code,
+                                   opts
+
+  slide(name) do
+    centered_title title, options[:title]
+
+    code(path, options[:demo], options[:code]) do |example_app|
       example_app.keypress do |key|
         example_app.quit if key == "w" || key == :escape
       end
     end
-
-    element.font = "Courier"
-    element.size = size
-
-    blk.call if blk
-  end
-end
-
-def tobi_example_code(name, my_title, path, demo = false, &blk)
-  slide(name) do
-    title '  ' + my_title, size: 60, margin_bottom: 10
-
-    element = code(path, demo) do |example_app|
-      example_app.keypress do |key|
-        example_app.quit if key == "w" || key == :escape
-      end
-    end
-
-    element.font = "Courier"
-    element.size = 24
 
     blk.call if blk
   end
@@ -91,4 +94,11 @@ def fullscreen_image_slide(name, path)
   slide(name) do
     fullscreen_image path
   end
+end
+
+# merge order is = defaults, template, custom
+def _merge_template_options(default_options, template_key, custom_options = {})
+  template_options = configuration.template_options.fetch template_key, {}
+  options = Wingtips::HashUtils.deep_merge(default_options, template_options)
+  Wingtips::HashUtils.deep_merge(options, custom_options)
 end
