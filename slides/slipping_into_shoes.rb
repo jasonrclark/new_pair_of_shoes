@@ -1,5 +1,5 @@
 main_section "SlippingIntoShoes", 'Slipping into Shoes'
-tobi_main_section "TobiSlippingIntoShoes", 'Slipping into Shoes'
+main_section "TobiSlippingIntoShoes", 'Slipping into Shoes'
 
 tobi_example_code "ShoesApp", 'Shoes.app', "code/shoes_app.rb", true
 tobi_example_code "Para",     'para',      "code/para.rb", true

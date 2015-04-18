@@ -1,9 +1,9 @@
 GIT
   remote: git://github.com/PragTob/wingtips.git
-  revision: e429a43b280a587b0a84423191581667194bae32
+  revision: 0da93e618dd6490ed10a6b22e482cec0d7108177
   branch: code-highlighting
   specs:
-    wingtips (0.1.0)
+    wingtips (0.2.0)
       shoes (~> 4.0.0.pre3)
       shoes-highlighter (~> 1.0.1)
 

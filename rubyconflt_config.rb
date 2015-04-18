@@ -14,7 +14,13 @@ wingtips_options  app: {title: "Get Your Shoes (Back) On"},
                     constant:  {stroke: Shoes::COLORS[:darkviolet], weight: "bold"},
                     class:     {stroke: Shoes::COLORS[:darkviolet], weight: "bold"},
                     matching:  {stroke: "#ff0", weight: "bold"},
-              }
+                  },
+                  templates: {
+                    main_section: {
+                      size: 80,
+                      margin_top: 300
+                    }
+                  }
 slide do
   font 'fonts/ArchitectsDaughter.ttf'
   font = 'ArchitectsDaughter'

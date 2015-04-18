@@ -64,7 +64,7 @@ slide "WhatIsShoes" do
   centered_huge_text "?", weight: 'bold', margin_top: 170
 end
 
-tobi_main_section 'ShoesQuestion', 'Shoes?'
+main_section 'ShoesQuestion', 'Shoes?'
 
 title_slide "DEMOS", "DEMOS"
 

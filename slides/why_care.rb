@@ -1,4 +1,4 @@
-tobi_main_section 'WhyCare', 'Why Should I Care?'
+main_section 'WhyCare', 'Why Should I Care?'
 
 fullscreen_image_slide 'Web', 'tracketytrack.png'
 fullscreen_image_slide 'Console', 'rspec.png'
