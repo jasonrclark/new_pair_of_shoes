@@ -1,22 +1,15 @@
 GIT
   remote: git://github.com/PragTob/wingtips.git
-  revision: 95d3b2d514643bb8c8e8c360a1ac82f6ef227c60
+  revision: e429a43b280a587b0a84423191581667194bae32
   branch: code-highlighting
   specs:
     wingtips (0.1.0)
       shoes (~> 4.0.0.pre3)
-      shoes-highlighter (~> 1.0.0)
-
-GIT
-  remote: git://github.com/shoes/shoes-highlighter.git
-  revision: 26cb679018ec9652cd70cb6088afb3d26a0d2984
-  branch: code-highlighting
-  specs:
-    shoes-highlighter (1.0.0)
+      shoes-highlighter (~> 1.0.1)
 
 GIT
   remote: git://github.com/shoes/shoes4.git
-  revision: 0798a2d3452ee0fc983caf0b72fb20bc7237f3ed
+  revision: bc5f66d80b04cbbb8065d5796a7d0f18713604c6
   specs:
     shoes (4.0.0.pre3)
       shoes-core (= 4.0.0.pre3)
@@ -49,6 +42,7 @@ GEM
     plist (3.1.0)
     rake (10.4.2)
     rubyzip (1.1.7)
+    shoes-highlighter (1.0.1)
     shoes-manual (4.0.0)
       nokogiri (~> 1.6.4.1, >= 1.6.4.1)
       shoes-highlighter (~> 1.0, >= 1.0.0)
@@ -65,5 +59,4 @@ PLATFORMS
 
 DEPENDENCIES
   shoes!
-  shoes-highlighter!
   wingtips!

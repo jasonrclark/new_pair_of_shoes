@@ -1,4 +1,4 @@
-startup_options title: "Get Your Shoes (Back) On"
+wingtips_options app: {title: "Get Your Shoes (Back) On"}
 
 slide do
   background cornflowerblue
