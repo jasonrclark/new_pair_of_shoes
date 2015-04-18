@@ -19,8 +19,12 @@ wingtips_options  app: {title: "Get Your Shoes (Back) On"},
                     main_section: {
                       size: 80,
                       margin_top: 300
+                    },
+                    title_slide: {
+                      size: 60
                     }
                   }
+
 slide do
   font 'fonts/ArchitectsDaughter.ttf'
   font = 'ArchitectsDaughter'

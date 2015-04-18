@@ -30,12 +30,15 @@ def main_section(name, text, opts={})
   end
 end
 
-def title_slide(name, text, &block)
+def title_slide(name, text, opts={}, &block)
+  options = {
+    size: Wingtips::ENORMOUS_SIZE,
+    vertical_align: 'center',
+    weight: 'bold'
+  }.merge(configuration.template_options[:title_slide]).merge opts
+
   slide(name) do
-    centered_title text,
-      size: 60,
-      weight: 'bold',
-      vertical_align: 'center'
+    centered_title text, options
     self.instance_eval(&block) if block
   end
 end
