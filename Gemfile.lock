@@ -1,13 +1,4 @@
 GIT
-  remote: git://github.com/PragTob/wingtips.git
-  revision: 0ddbbc7b6c4122f270913d29c27b6c90feadbe49
-  branch: code-highlighting
-  specs:
-    wingtips (0.2.0)
-      shoes (~> 4.0.0.pre3)
-      shoes-highlighter (~> 1.0.1)
-
-GIT
   remote: git://github.com/shoes/shoes4.git
   revision: bc5f66d80b04cbbb8065d5796a7d0f18713604c6
   specs:
@@ -52,6 +43,9 @@ GEM
       jruby-rack (>= 1.1.1, < 1.3)
       rake (>= 0.9.6)
       rubyzip (>= 0.9, < 1.2)
+    wingtips (0.2.0)
+      shoes (~> 4.0.0.pre3)
+      shoes-highlighter (~> 1.0.1)
 
 PLATFORMS
   java
@@ -59,4 +53,4 @@ PLATFORMS
 
 DEPENDENCIES
   shoes!
-  wingtips!
+  wingtips (~> 0.2)
