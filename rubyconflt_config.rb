@@ -37,12 +37,9 @@ wingtips_options  app: {title: "Get Your Shoes (Back) On"},
                   }
 
 slide do
+  # waiting for wingtips level font support :)
   font 'fonts/ArchitectsDaughter.ttf'
-  font = 'ArchitectsDaughter'
-  style(Shoes::Para, font: font)
-  style(Shoes::Title, font: font)
-  style(Shoes::Banner, font: font)
-  style(Shoes::Subtitle, font: font)
+  style(font: 'ArchitectsDaughter')
 end
 
 slides YearsBack,
