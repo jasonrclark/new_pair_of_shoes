@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/shoes/shoes4.git
-  revision: bc5f66d80b04cbbb8065d5796a7d0f18713604c6
+  revision: 74d56816f343b27386c8c7d6f4ba374347d67b61
   specs:
     shoes (4.0.0.pre3)
       shoes-core (= 4.0.0.pre3)
