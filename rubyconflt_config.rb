@@ -1,3 +1,4 @@
+# Optimized for 1024 x 768 resolution
 wingtips_options  app: {title: "Get Your Shoes (Back) On"},
                   background_color: Shoes::COLORS[:white],
                   code_highlighting: {
