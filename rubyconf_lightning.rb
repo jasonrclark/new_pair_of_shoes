@@ -1,6 +1,7 @@
-startup_options title: "Get Your Shoes (Back) On",
-                width: 1024, height: 768,
-                fullscreen: false
+wingtips_options app: {
+                   title: "Get Your Shoes (Back) On",
+                   width: 1024, height: 768,
+                   fullscreen: false }
 
 
 slides MainTitle,

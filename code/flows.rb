@@ -1,7 +1,10 @@
 Shoes.app do
   flow do
-    para "One"
-    para "Two"
-    para "Three"
+    banner "One"
+    banner "Two"
+    banner "Three"
+    banner "Four"
+    banner "Five"
+    banner "Six"
   end
 end

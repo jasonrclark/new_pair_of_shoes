@@ -1,4 +1,5 @@
 main_section "CobblingItTogether", 'Cobbling it Together'
+main_section "AWalkThroughShoes", 'A walk through Shoes'
 slide "MoreShoes4" do
   centered_enormous_text 'Shoes 4', margin_top: 200
 end
@@ -21,16 +22,34 @@ slide "DslDiagram" do
   line 540, 290, 550, 275, strokewidth: 6
 end
 
-example_code "ProgressDemo",   "Progress bar", "code/progress.rb", 28
-example_code "ProgressDsl",    "dsl.rb", "code/progress-dsl.rb", 28, false
-example_code "ProgressClass1", "progress.rb", "code/progress-class.rb", 28, false
-example_code "ProgressClass2", "progress.rb", "code/progress-class-2.rb", 28, false
-example_code "ProgressClass3", "progress.rb", "code/progress-class-3.rb", 28, false
-example_code "ProgressSwt1",   "swt/progress.rb", "code/progress-backend.rb", 28, false
-example_code "ProgressSwt2",   "swt/progress.rb", "code/progress-backend-2.rb", 28, false
+example_code "ProgressDemo",   "Progress bar", "code/progress.rb",
+             size: 28, demo: true
+example_code "ProgressDsl",    "dsl.rb", "code/progress-dsl.rb", size: 28
+example_code "ProgressClass1", "progress.rb", "code/progress-class.rb",
+             size: 28
+example_code "ProgressClass2", "progress.rb", "code/progress-class-2.rb",
+             size: 28
+example_code "ProgressClass3", "progress.rb", "code/progress-class-3.rb",
+             size: 28
+example_code "ProgressSwt1",   "swt/progress.rb", "code/progress-backend.rb",
+             size: 28
+example_code "ProgressSwt2",   "swt/progress.rb", "code/progress-backend-2.rb",
+             size: 28
 
-example_code "ProgressSpec",    "progress_spec.rb", "code/progress-dsl-spec.rb", 28, false
-example_code "ProgressSwtSpec", "swt/progress_spec.rb", "code/progress-backend-spec.rb", 28, false
+example_code "ProgressSpec",    "progress_spec.rb", "code/progress-dsl-spec.rb", size: 28
+example_code "ProgressSwtSpec", "swt/progress_spec.rb", "code/progress-backend-spec.rb", size: 28
 
 title_slide "StartupAndCosts", "Startup and other costs"
 
+
+example_code 'ButtonDsl', 'dsl.rb', 'button-dsl.rb'
+example_code 'ButtonClass', "Button Class", 'button-class.rb'
+example_code 'UIElement', "UIElement", 'ui-element.rb'
+example_code 'CommonInitialization', "Common::Initialization", 'common-initialization.rb'
+example_code 'CommonInitializationHandleBlock', "Common::Initialization", 'common-initialization-handle-block.rb'
+example_code 'CommonClickable', "Common::Clickable", 'common-clickable.rb'
+example_code 'SwtButton', "Swt::Button", 'swt-button.rb'
+example_code 'SwtSwtButton', "Swt::SwtButton", 'swt-swt-button.rb'
+example_code 'SwtSwtButtonClick', "Swt::SwtButton", 'swt-swt-button-click.rb'
+
+title_slide 'Phew', 'Phew...'

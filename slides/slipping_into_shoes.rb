@@ -1,15 +1,14 @@
 main_section "SlippingIntoShoes", 'Slipping into Shoes'
+main_section "TobiSlippingIntoShoes", 'Slipping into Shoes'
 
-example_code "ShoesApp", 'Shoes.app', "code/shoes_app.rb"
-example_code "Para",     'para',      "code/para.rb" do
-  # Sneaky, know we want this bumped up after this point
-  Shoes::Para::STYLES[:size] = 48
-end
-example_code "Button",   'button',    "code/button.rb"
-example_code "Edit",     'edit',      "code/edit.rb"
+example_code "ShoesApp", 'Shoes.app', "code/shoes_app.rb", demo: true
+example_code "Para",     'para',      "code/para.rb", demo: true
 
-example_code "Stacks", 'Stacks', "code/stacks.rb"
-example_code "Flows",  'Flows',  "code/flows.rb"
+example_code "Button",   'button',    "code/button.rb", demo: true
+example_code "Edit",     'edit',      "code/edit.rb", demo: true
+
+example_code "Stacks", 'Stacks', "code/stacks.rb", demo: true
+example_code "Flows",  'Flows',  "code/flows.rb", demo: true
 
 slide "Drawing" do
   centered_title "Drawing",
@@ -34,10 +33,14 @@ slide "Drawing" do
   end
 end
 
-example_code "Rect", 'rect', "code/rect.rb"
+example_code "Rect", 'rect', "code/rect.rb", demo: true
 example_code "Oval", 'oval', "code/oval.rb"
 example_code "Star", 'star', "code/star.rb"
-example_code "SimpleFace", 'simple-face', "../shoes4/samples/simple-face.rb", 24
+example_code "SimpleFace", 'simple-face', "../shoes4/samples/simple-face.rb",
+             demo: true
+example_code 'BasicApp', 'A basic app', 'basic_app.rb', demo: true
+
+example_code "TobiSimpleFace", 'simple-face', 'simple-face.rb', demo: true
+
 
 title_slide "WidgetsAndMore", 'Widgets, animations and more!'
-

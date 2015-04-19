@@ -64,8 +64,12 @@ slide "WhatIsShoes" do
   centered_huge_text "?", weight: 'bold', margin_top: 170
 end
 
+main_section 'ShoesQuestion', 'Shoes?'
+
 title_slide "DEMOS", "DEMOS"
 
+# Note: relies on you having the shoes4 repository checked out
+# and in the same directory as get_your_shoes_back_on
 demo_slide "Minesweeper", "../shoes4/samples/expert-minesweeper-adjusted.rb"
 demo_slide "Snake", "../shoes4/samples/expert-snake.rb"
 demo_slide "Clock", "../shoes4/samples/good-clock.rb"
@@ -91,3 +95,6 @@ shoes_slide "PurpleShoes", "Purple Shoes\nSWT", "images/shoes.purple.png"
 shoes_slide "BlackShoes",  "Black Shoes\nHTML/CoffeeScript", "images/shoes.black.png"
 
 title_slide "Shoes4", "Shoes 4"
+
+title_slide "CrossPlatform", "Cross Platform"
+title_slide "RubyGuiDsl", "Ruby DSL in the GUI world"
