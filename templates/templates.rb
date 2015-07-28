@@ -34,22 +34,22 @@ def main_section(name, text, opts={})
   end
 end
 
-DEFAULT_TITLE_SLIDE_OPTIONS = {
-  size:           Wingtips::ENORMOUS_SIZE,
-  vertical_align: 'center',
-  weight:         'bold'
-}.freeze
+#DEFAULT_TITLE_SLIDE_OPTIONS = {
+  #size:           Wingtips::ENORMOUS_SIZE,
+  #vertical_align: 'center',
+  #weight:         'bold'
+#}.freeze
 
-def title_slide(name, text, opts={}, &block)
-  options = _merge_template_options DEFAULT_TITLE_SLIDE_OPTIONS,
-                                    :title_slide,
-                                    opts
+#def title_slide(name, text, opts={}, &block)
+  #options = _merge_template_options DEFAULT_TITLE_SLIDE_OPTIONS,
+                                    #:title_slide,
+                                    #opts
 
-  slide(name) do
-    centered_title text, options
-    self.instance_eval(&block) if block
-  end
-end
+  #slide(name) do
+    #centered_title text, options
+    #self.instance_eval(&block) if block
+  #end
+#end
 
 def shoes_slide(name, title, file)
   slide(name) do

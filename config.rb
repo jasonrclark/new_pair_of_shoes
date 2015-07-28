@@ -1,12 +1,12 @@
 wingtips_options app: {
                    title: "Get Your Shoes (Back) On",
-                   width: 1280, height: 960,
+                   width: 1024, height: 768,
                    fullscreen: false }
 
 slides MainTitle,
   WhatIsShoes,
     DEMOS, Minesweeper, Snake, Clock,
-    Why, HacketyHack, WhysGone,
+    Why, HacketyHack, CoralineIsAwesome, WhysGone,
     GreenShoes, BlueShoes, BrownShoes, OrangeShoes, PurpleShoes, BlackShoes,
     Shoes4,
 
@@ -14,7 +14,7 @@ slides MainTitle,
     ShoesApp, Para, Button, Edit,
     Stacks, Flows,
     Drawing,
-    Rect, Oval, Star, SimpleFace,
+    Rect, Oval, Star, TobiSimpleFace,
     WidgetsAndMore,
 
   CobblingItTogether,

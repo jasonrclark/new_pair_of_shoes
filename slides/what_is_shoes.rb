@@ -1,14 +1,13 @@
+# encoding: utf-8
+
 slide "MainTitle" do
   background cornflowerblue
   centered_title 'Get Your Shoes (Back) On',
     size: 120,
     weight: 'bold',
     margin_top: 100
-  para "@jasonrclark",
-    align: 'center',
-    size: 32,
-    margin_top: 30
-  center_horizontally image "images/shoes.png", margin_top: 30
+  center_horizontally image "images/logos.png", margin_top: 20
+  center_horizontally image "images/shoes.png", margin_top: 120
 end
 
 slide "WhatIsShoes" do
@@ -51,6 +50,8 @@ slide "WhatIsShoes" do
           line_to my_left + 60, my_top + 130
         end
 
+        nofill
+
         @chicken << oval(my_left, my_top + 85, 66, 66, fill: white)
         @chicken << oval(my_left + 20, my_top + 120, 10, 10, fill: ivory)
         @chicken << oval(my_left + 20, my_top + 122, 5, 5, fill: blue)
@@ -59,7 +60,7 @@ slide "WhatIsShoes" do
       end
     end
   end
-  centered_huge_text "What's", weight: 'bold', margin_top: 120
+  centered_huge_text "What is", weight: 'bold', margin_top: 120
   center_horizontally image "images/shoes.png", margin_top: 30
   centered_huge_text "?", weight: 'bold', margin_top: 170
 end
@@ -81,6 +82,18 @@ end
 
 slide "HacketyHack" do
   fullscreen_image "images/hacketyhack.png"
+end
+
+slide "CoralineIsAwesome" do
+  background pink
+
+  centered_title "♥♥♥", stroke: red,
+    size: 240,
+    weight: 'bold',
+    margin_top: 100
+
+  centered_title 'http://jasonrclark.com/coraline',
+    margin_top: 20
 end
 
 slide "WhysGone" do

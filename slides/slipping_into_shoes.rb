@@ -43,4 +43,11 @@ example_code 'BasicApp', 'A basic app', 'basic_app.rb', demo: true
 example_code "TobiSimpleFace", 'simple-face', 'simple-face.rb', demo: true
 
 
-title_slide "WidgetsAndMore", 'Widgets, animations and more!'
+slide "WidgetsAndMore" do
+  centered_title "Widgets, Animations and More!",
+    size: 100,
+    weight: 'bold',
+    margin_left: 50,
+    margin_right: 50,
+    margin_top: 100
+end

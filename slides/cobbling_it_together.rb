@@ -1,21 +1,19 @@
 main_section "CobblingItTogether", 'Cobbling it Together'
 main_section "AWalkThroughShoes", 'A walk through Shoes'
-slide "MoreShoes4" do
-  centered_enormous_text 'Shoes 4', margin_top: 200
-end
 
+title_slide "MoreShoes4", "Shoes 4"
 title_slide "UseJava",  'Java?'
-title_slide "UseJRuby", 'JRuby'
+title_slide "UseJRuby", 'JRuby!'
 title_slide "SwtGem",   'SWT' do
   para "https://github.com/danlucraft/swt", align: 'center', size: 32, stroke: blue
 end
 
 slide "DslDiagram" do
   rect 150, 200, 300, 150, fill: yellow
-  para "DSL", left: 250, top: 260
+  para "DSL", left: 200, top: 210, size: 100
 
   rect 550, 200, 300, 150, fill: lightseagreen
-  para "SWT", left: 650, top: 260
+  para "SWT", left: 600, top: 210, size: 100
 
   line 450, 275, 550, 275, strokewidth: 6
   line 540, 260, 550, 275, strokewidth: 6
@@ -39,7 +37,7 @@ example_code "ProgressSwt2",   "swt/progress.rb", "code/progress-backend-2.rb",
 example_code "ProgressSpec",    "progress_spec.rb", "code/progress-dsl-spec.rb", size: 28
 example_code "ProgressSwtSpec", "swt/progress_spec.rb", "code/progress-backend-spec.rb", size: 28
 
-title_slide "StartupAndCosts", "Startup and other costs"
+title_slide "StartupAndCosts", "Startup"
 
 
 example_code 'ButtonDsl', 'dsl.rb', 'button-dsl.rb'

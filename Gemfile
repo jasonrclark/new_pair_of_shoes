@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'shoes', github: 'shoes/shoes4'
-gem 'wingtips', '~> 0.2'
+gem 'shoes', path: '../shoes4'
+gem 'wingtips', path: '../wingtips'
+gem 'pry'
+gem 'pry-nav'

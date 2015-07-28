@@ -3,9 +3,9 @@ class Shoes
     include Common::UIElement
     include Common::Style
 
-    attr_reader :app, :parent, :dimensions, :gui
+    attr_reader :app, :parent,
+                :dimensions, :gui
 
-    style_with :common_styles, :dimensions, :fraction
+    style_with :fraction, :common_styles
+
     STYLES = {fraction: 0.0}
-
-    # ...
