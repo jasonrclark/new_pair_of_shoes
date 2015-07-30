@@ -14,14 +14,11 @@ slide "Thanks" do
        size: 120,
        weight: 'bold',
        margin_top: 100
-  para "@jasonrclark",
-       align: 'center',
-       size: 32,
-       margin_top: 30
+  center_horizontally image "images/logos.png", margin_top: 20
   para "http://github.com/shoes/shoes4",
        align: 'center',
        size: 32,
-       margin_top: 15
+       margin_top: 125
   para "http://github.com/PragTob/wingtips",
        align: 'center',
        size: 32,
