@@ -5,10 +5,10 @@ wingtips_options app: {
 
 slides MainTitle,
   WhatIsShoes,
+    Why, WhysGone,
     DEMOS, Minesweeper, Snake, Clock,
     WingtipsDemo,
     HacketyHack, CoralineIsAwesome,
-    Why, WhysGone,
     GreenShoes, BlueShoes, BrownShoes, OrangeShoes, PurpleShoes, BlackShoes,
     So, Many, SoManyShoes,
     Shoes4, UseJRuby, UseJava,
