@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 slide "MainTitle" do
-  background cornflowerblue
+  background forestgreen
   centered_title 'Get Your Shoes (Back) On',
     size: 120,
     weight: 'bold',
@@ -74,6 +74,9 @@ title_slide "DEMOS", "DEMOS"
 demo_slide "Minesweeper", "../shoes4/samples/expert-minesweeper-adjusted.rb"
 demo_slide "Snake", "../shoes4/samples/expert-snake.rb"
 demo_slide "Clock", "../shoes4/samples/good-clock.rb"
+title_slide "WingtipsDemo",   'Wingtips' do
+  para "https://github.com/pragtob/wingtips", align: 'center', size: 32, stroke: blue
+end
 
 slide "Why" do
   fullscreen_image "images/_why.png"
@@ -92,7 +95,7 @@ slide "CoralineIsAwesome" do
     weight: 'bold',
     margin_top: 100
 
-  centered_title 'http://jasonrclark.com/coraline',
+  centered_title 'http://jasonrclark.com/cora',
     margin_top: 20
 end
 
@@ -106,6 +109,10 @@ shoes_slide "BrownShoes",  "Brown Shoes\nSWT/Swing", "images/shoes.brown.png"
 shoes_slide "OrangeShoes", "Orange Shoes\nHTML/Javascript", "images/shoes.orange.png"
 shoes_slide "PurpleShoes", "Purple Shoes\nSWT", "images/shoes.purple.png"
 shoes_slide "BlackShoes",  "Black Shoes\nHTML/CoffeeScript", "images/shoes.black.png"
+
+title_slide "So", "So..."
+title_slide "Many", "Many..."
+title_slide "SoManyShoes", "...Shoes!"
 
 title_slide "Shoes4", "Shoes 4"
 

@@ -3,7 +3,7 @@ slide "Gaga" do
 end
 
 slide "RubyConfThanks" do
-  background cornflowerblue
+  background blanchedalmond
   centered_title 'Thanks!',
     size: 120,
     weight: 'bold',

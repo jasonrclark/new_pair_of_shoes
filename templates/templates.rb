@@ -29,7 +29,7 @@ def main_section(name, text, opts={})
                                     opts
 
   slide(name) do
-    background cornflowerblue
+    background forestgreen
     centered_title text, options
   end
 end

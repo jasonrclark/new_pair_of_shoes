@@ -14,6 +14,7 @@ directory.sort.each_with_index do |image_path, i|
 end
 
 slide 'JavaCode1' do
+  centered_title "Java Hello World"
   empty_line
   c = code <<-CODE
 public class HelloWorldSwing {
@@ -27,6 +28,7 @@ public class HelloWorldSwing {
         frame.pack();
         frame.setVisible(true);
     }
+}
   CODE
   c.font = 'Courier'
   c.size = 24

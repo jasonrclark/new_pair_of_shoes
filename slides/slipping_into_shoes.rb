@@ -36,6 +36,8 @@ end
 example_code "Rect", 'rect', "code/rect.rb", demo: true
 example_code "Oval", 'oval', "code/oval.rb"
 example_code "Star", 'star', "code/star.rb"
+example_code "Shapes", 'shape', 'code/chicken.rb'
+
 example_code "SimpleFace", 'simple-face', "../shoes4/samples/simple-face.rb",
              demo: true
 example_code 'BasicApp', 'A basic app', 'basic_app.rb', demo: true
@@ -49,5 +51,5 @@ slide "WidgetsAndMore" do
     weight: 'bold',
     margin_left: 50,
     margin_right: 50,
-    margin_top: 100
+    margin_top: 200
 end
