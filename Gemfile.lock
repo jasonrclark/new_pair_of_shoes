@@ -9,7 +9,7 @@ GEM
       plist
       rubyzip (>= 1.0.0)
       warbler (~> 2.0.4)
-    jruby-jars (9.1.13.0)
+    jruby-jars (9.1.14.0)
     jruby-rack (1.1.21)
     method_source (0.8.2)
     mini_portile (0.6.2)
@@ -28,23 +28,23 @@ GEM
       spoon (~> 0.0)
     rake (12.2.1)
     rubyzip (1.2.1)
-    shoes (4.0.0.pre12)
-      shoes-core (= 4.0.0.pre12)
+    shoes (4.0.0.rc1)
+      shoes-core (= 4.0.0.rc1)
       shoes-manual (~> 4.0.0, >= 4.0.0)
-      shoes-swt (= 4.0.0.pre12)
-    shoes-core (4.0.0.pre12)
+      shoes-swt (= 4.0.0.rc1)
+    shoes-core (4.0.0.rc1)
     shoes-highlighter (1.0.1)
     shoes-manual (4.0.1)
       nokogiri (~> 1.6.4.1, >= 1.6.4.1)
       shoes-highlighter (~> 1.0, >= 1.0.0)
-    shoes-package (4.0.0.pre12)
+    shoes-package (4.0.0.rc1)
       bundler
       furoshiki (~> 0.6.0)
-      shoes-core (= 4.0.0.pre12)
-    shoes-swt (4.0.0.pre12)
+      shoes-core (= 4.0.0.rc1)
+    shoes-swt (4.0.0.rc1)
       after_do (~> 0.4.0)
-      shoes-core (= 4.0.0.pre12)
-      shoes-package (= 4.0.0.pre12)
+      shoes-core (= 4.0.0.rc1)
+      shoes-package (= 4.0.0.rc1)
       swt (~> 4.6.1.1)
     slop (3.6.0)
     spoon (0.0.6)
@@ -65,7 +65,7 @@ PLATFORMS
 
 DEPENDENCIES
   pry
-  shoes (= 4.0.0.pre12)
+  shoes (= 4.0.0.rc1)
   wingtips (~> 0.2)
 
 BUNDLED WITH

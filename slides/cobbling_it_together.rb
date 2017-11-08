@@ -4,10 +4,49 @@ slide "MoreShoes4" do
   centered_enormous_text 'Shoes 4', margin_top: 200
 end
 
+title_with_icon "GetInvolved", "Get Involved"
+title_with_icon "Architecture", "Shoes 4 Architecture"
+
+slide "Shoes4OnGithub" do
+  center_horizontally image "images/shoes4-repo.png", width: 1400
+end
+
+title_slide "ShoesGem", "gem 'shoes'"
+title_slide "ShoesCore", "gem 'shoes-core'"
+title_slide "ShoesSwt", "gem 'shoes-swt'"
+title_slide "ShoesPackage", "gem 'shoes-package'"
+title_slide "Furoshiki", "gem 'furoshiki'"
+title_slide "ShoesManual", "gem 'shoes-manual'"
+
+slide "Manual" do
+  center_horizontally image "images/manual.png", width: 1400
+end
+
 title_slide "UseJava",  'Java?'
 title_slide "UseJRuby", 'JRuby'
-title_slide "SwtGem",   'SWT' do
+
+title_slide "SwtGem", "gem 'swt'" do
   para "https://github.com/danlucraft/swt", align: 'center', size: 32, stroke: blue
+end
+
+slide "ArchitectureDiagram" do
+  para "shoes-core", left: 200, top: 100, size: 100
+  para "shoes-swt",  left: 1200, top: 100, size: 100
+
+  line 960, 0, 960, 1200, strokewidth: 10, stroke: gray
+
+  rect 200, 300, 400, 200, strokewidth: 3, fill: lightgray
+  para "Shoes::Rect", left: 280, top: 370, size: 40
+
+  line 600, 400, 1200, 400, strokewidth: 3, fill: gray
+
+  rect 1200, 300, 530, 200, strokewidth: 3, fill: lightgray
+  para "Shoes::Swt::Rect", left: 1300, top: 370, size: 40
+
+  line 1465, 500, 1465, 600, strokewidth: 3, fill: gray
+
+  rect 1200, 600, 530, 200, strokewidth: 3, fill: lightgray
+  para "Shoes::Swt::RectPainter", left: 1250, top: 670, size: 40
 end
 
 slide "DslDiagram" do
