@@ -11,7 +11,7 @@ def demo_slide(name, file)
   title_slide(name, "DEMOS") do
     demo file do |example_app|
       example_app.keypress do |key|
-        example_app.quit if key == "w" || key == :escape
+        example_app.close if key == "w" || key == :escape
       end
     end
   end
@@ -82,7 +82,7 @@ def example_code(name, title, path, opts = {}, &blk)
 
     code(path, options[:demo], options[:code]) do |example_app|
       example_app.keypress do |key|
-        example_app.quit if key == "w" || key == :escape
+        example_app.close if key == "w" || key == :escape
       end
     end
 

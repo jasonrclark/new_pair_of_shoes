@@ -36,7 +36,7 @@ end
 example_code "Rect", 'rect', "code/rect.rb", demo: true
 example_code "Oval", 'oval', "code/oval.rb"
 example_code "Star", 'star', "code/star.rb"
-example_code "SimpleFace", 'simple-face', "../shoes4/samples/simple-face.rb",
+example_code "SimpleFace", 'simple_face', "../shoes4/samples/simple_face.rb",
              demo: true
 example_code 'BasicApp', 'A basic app', 'basic_app.rb', demo: true
 

@@ -70,9 +70,9 @@ title_slide "DEMOS", "DEMOS"
 
 # Note: relies on you having the shoes4 repository checked out
 # and in the same directory as get_your_shoes_back_on
-demo_slide "Minesweeper", "../shoes4/samples/expert-minesweeper-adjusted.rb"
-demo_slide "Snake", "../shoes4/samples/expert-snake.rb"
-demo_slide "Clock", "../shoes4/samples/good-clock.rb"
+demo_slide "Minesweeper", "../shoes4/samples/expert_minesweeper.rb"
+demo_slide "Snake", "../shoes4/samples/expert_snake.rb"
+demo_slide "Clock", "../shoes4/samples/good_clock.rb"
 
 slide "Why" do
   fullscreen_image "images/_why.png"
