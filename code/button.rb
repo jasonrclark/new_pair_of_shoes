@@ -1,5 +1,5 @@
 Shoes.app do
   button "Click?" do
-    alert "Ouch!"
+    alert "Howdy RubyConf!"
   end
 end

@@ -1,7 +1,7 @@
 Shoes.app do
-  @edit = edit_line
+  my_editor = edit_line
 
   button "What?" do
-    alert @edit.text
+    alert my_editor.text
   end
 end

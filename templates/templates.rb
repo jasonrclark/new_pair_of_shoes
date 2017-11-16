@@ -8,10 +8,17 @@ def unfinished(name, text)
 end
 
 def demo_slide(name, file)
-  title_slide(name, "DEMOS") do
+  slide(name) do
+    background mediumpurple
+    centered_title "DEMOS",
+      size: 200,
+      weight: 'bold',
+      margin_top: 200
+    center_horizontally image "images/new-shoes.png", width: 300, margin_top: 30
+
     demo file do |example_app|
       example_app.keypress do |key|
-        example_app.quit if key == "w" || key == :escape
+        example_app.close if key == "w" || key == :escape
       end
     end
   end
@@ -29,7 +36,7 @@ def main_section(name, text, opts={})
                                     opts
 
   slide(name) do
-    background cornflowerblue
+    background mediumpurple
     centered_title text, options
   end
 end
@@ -51,13 +58,30 @@ def title_slide(name, text, opts={}, &block)
   end
 end
 
+def title_with_icon(name, text, override_opts = {}, &block)
+  options = {
+    size: 200,
+    weight: 'bold',
+    margin_top: 200
+  }
+  options = options.merge(override_opts)
+
+  slide name do
+    background mediumpurple
+    centered_title text, options
+    center_horizontally image "images/new-shoes.png", width: 300, margin_top: 30
+  end
+
+  self.instance_eval(&block) if block
+end
+
 def shoes_slide(name, title, file)
   slide(name) do
     centered_title title,
-      size: Wingtips::VERY_BIG_SIZE,
+      size: Wingtips::ENORMOUS_SIZE,
       weight: 'bold',
       margin_top: 120
-    center_horizontally image file, margin_top: 30
+    center_horizontally image file, width: 250, margin_top: 30
   end
 end
 
@@ -82,7 +106,7 @@ def example_code(name, title, path, opts = {}, &blk)
 
     code(path, options[:demo], options[:code]) do |example_app|
       example_app.keypress do |key|
-        example_app.quit if key == "w" || key == :escape
+        example_app.close if key == "w" || key == :escape
       end
     end
 
